@@ -1,0 +1,70 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+    <title>callback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+ 
+</head>
+<body style="background-color:#cbcbcb">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="choose.html">Как выбрать часы</a></li>
+            <li><a href="galary.html">Галерея</a></li>
+            <li><a href="brand.html">Известные марки</a></li>
+            <li class="active"><a href="works.html">Отправить сообщение</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+<div class="row">
+<div class="col-sm-6 col-sm-offset-3">
+    <div class="well" style="margin-top: 10%;">
+    <h3>Отправьте сообщение</h3>
+    <form role="form" id="contactForm" data-toggle="validator" class="shake" >
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="name" class="h4">Имя</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
+                <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email" class="h4">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required data-error="NEW ERROR MESSAGE">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message" class="h4 ">Сообщение</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+            <div class="help-block with-errors"></div>
+        </div>
+        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Отправить</button>
+        <div id="msgSubmit" class="h3 text-center hidden"></div>
+        <div class="clearfix"></div>
+    </form>
+    </div>
+</div>
+</div>
+</body>
+<script  type="text/javascript" src="assets/js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="assets/js/validator.min.js"></script>
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+</html>
+
+<!--action="assets/php/callback.php" method="post"-->
